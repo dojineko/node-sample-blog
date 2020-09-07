@@ -1,0 +1,30 @@
+{
+  "clearMocks": true,
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "json"
+  ],
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "moduleNameMapper": {
+    "^~/(.*)$": "<rootDir>/$1"
+  },
+  "transform": {
+    "\\.ts$": "ts-jest"
+  },
+  "testMatch": [
+    "<rootDir>/**/*.test.ts"
+  ],
+  "globals": {
+    "ts-jest": {
+      "diagnostics": false,
+      "tsConfig": "./tsconfig.test.json"
+    }
+  },
+  "testURL": "http://localhost",
+  "setupFilesAfterEnv": [
+    "<rootDir>/test/setup.ts"
+  ]
+}
